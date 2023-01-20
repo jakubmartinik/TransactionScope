@@ -43,6 +43,7 @@ while (true)
             transaction.Complete();
         }
 
+        await Task.Delay(50);
         var _ = context.Customers.First().Description;
     }
     catch (Exception e)
